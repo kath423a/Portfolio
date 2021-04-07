@@ -1,0 +1,137 @@
+/******** GENERELLE INDSTILLINGER ***********/
+
+/********* FONTS ***********/
+
+/************ HEADER OG NAV STYLES *********/
+
+nav {
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  text-align: right;
+  padding: 0px;
+  z-index: 1;
+  position: relative;
+}
+
+nav li {
+  display: inline;
+  text-align: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.11rem;
+  font-weight: 300;
+}
+
+li a:hover {
+  color: darkblue;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+#menuknap {
+  display: inline-block;
+  position: fixed;
+  padding: 15px;
+  font-family: "Lato", sans-serif;
+  font-size: 2.2rem;
+  margin-top: -15px;
+  z-index: 1;
+  position: relative;
+}
+
+#menubar {
+  list-style-type: none;
+  transition: transform 0.3s;
+  transform-origin: top left;
+}
+
+@media (min-width: 700px) {
+  a.home_link {
+    text-align: left;
+    margin-left: -990px;
+    font-size: 2rem;
+  }
+
+  #menuknap {
+    display: none;
+  }
+
+  .hidden {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  #menubar li {
+    display: inline-block;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+/********* FRONTPAGE ***********/
+#frontpage_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  background-image: url(1x/name_logo.png);
+  height: 200px;
+  width: 550px;
+  background-size: contain;
+  margin-top: 100px;
+}
+
+.picture {
+  background-image: url(1x/artboard2.png);
+  height: 400px;
+  width: 350px;
+  background-size: cover;
+  margin-top: 90px;
+  margin-left: 40px;
+}
+
+/********* WORK ***********/
+
+#my_work {
+  display: grid;
+}
+
+.grid_layout {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 20px;
+  margin-top: -20px;
+}
+
+#my_work img {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+}
