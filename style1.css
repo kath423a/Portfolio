@@ -119,6 +119,9 @@ li a:hover {
 }
 
 /********* WORK ***********/
+h1 {
+  text-align: center;
+}
 
 #my_work {
   display: grid;
@@ -126,12 +129,23 @@ li a:hover {
 
 .grid_layout {
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0px 20px;
-  margin-top: -20px;
+  display: grid;
+}
+
+.work1,
+.work2,
+.work3,
+.work4,
+.work5,
+.work6 {
+  font-size: 16px;
+  justify-self: center;
+  padding: 30px 0px;
+  /* filter: invert(var(--value, 100%)); */
 }
 
 #my_work img {
-  height: 200px;
-  width: 200px;
-  background-size: cover;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
 }
