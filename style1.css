@@ -121,20 +121,25 @@ li a:hover {
 /********* WORK ***********/
 h1 {
   text-align: center;
+  color: rgb(14, 14, 172);
 }
 
 .grid_layout {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   display: grid;
-  column-gap: 1rem;
-  row-gap: 1rem;
+  /* column-gap: 1rem;
+  row-gap: 1rem; */
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
 }
 
 .work {
   font-size: 16px;
   justify-self: center;
-  padding: 30px 0px;
+  /* padding: 40px 60px 0px 60px; */
+  padding: 40px 10px 0px 10px;
   /* filter: invert(var(--value, 100%)); */
   display: grid;
   grid-template-columns: 1fr;
@@ -143,7 +148,7 @@ h1 {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 139, 0.267);
+  background-color: rgba(0, 0, 15, 0.534);
   width: 100%;
   height: 0;
   grid-column: 1/2;
@@ -152,7 +157,7 @@ h1 {
 
 .work:hover .overlay {
   height: 100%;
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .grid_layout img {
@@ -167,4 +172,64 @@ h1 {
   width: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
+}
+
+@media (max-width: 1000px) {
+  .grid_layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    /* column-gap: 1rem;
+      row-gap: 1rem; */
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .work {
+    font-size: 16px;
+    justify-self: center;
+    padding: 40px 60px 0px 60px;
+    /* filter: invert(var(--value, 100%)); */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: flex-end;
+  }
+
+  .grid_layout img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid_layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+    /* column-gap: 1rem;
+    row-gap: 1rem; */
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .work {
+    font-size: 16px;
+    justify-self: center;
+    padding: 40px 60px 0px 60px;
+    /* filter: invert(var(--value, 100%)); */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: flex-end;
+  }
+
+  .grid_layout img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+  }
 }
