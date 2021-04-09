@@ -145,11 +145,6 @@ li a:hover {
   color: black;
 }
 
-p.name {
-  font-size: 1.5rem;
-  margin-top: -20px;
-}
-
 .picture {
   background-image: url(1x/frontapage_2.png);
   height: 400px;
@@ -333,4 +328,81 @@ p.name {
     background-size: cover;
     object-fit: cover;
   }
+}
+
+/********* ABOUT ***********/
+#about_content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.about_info {
+  margin-top: 90px;
+  margin-left: 60px;
+  margin-right: 900px;
+}
+
+.about_info p {
+  font-size: 15px;
+  color: black;
+}
+
+.illustration1 {
+  background-image: url(1x/about_image.png);
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  margin-top: 90px;
+  transition: all 5s ease-in-out 0s;
+  margin-left: 200px;
+}
+
+.illustration1:hover {
+  cursor: default;
+  transform: rotate(-360deg);
+  transition: all 5s ease-in-out 0s;
+}
+
+/********* CONTACT ***********/
+#contact_content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contact_info {
+  margin-top: 90px;
+  margin-left: 60px;
+  margin-right: 900px;
+}
+
+.contact_infoimg {
+  max-width: 500px;
+}
+
+.contact_info p {
+  font-size: 20px;
+  color: black;
+}
+
+p.contact_info {
+  font-size: 1.5rem;
+  margin-top: -20px;
+}
+
+.illustration2 {
+  background-image: url(1x/frontpage_image1.png);
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  margin-top: 90px;
+  transition: all 5s ease-in-out 0s;
+  margin-left: 200px;
+}
+
+.illustration2:hover {
+  cursor: default;
+  transform: rotate(-360deg);
+  transition: all 5s ease-in-out 0s;
 }
