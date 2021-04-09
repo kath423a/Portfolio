@@ -2,6 +2,13 @@
 
 /********* FONTS ***********/
 
+h1 {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px blue;
+  font-weight: bold;
+}
+
 /************ HEADER OG NAV STYLES *********/
 
 nav {
@@ -95,11 +102,12 @@ li a:hover {
   }
 }
 
-a#cooltext.home_link {
-  color: white;
+/* a#cooltext.home_link {
+  color: black;
   -webkit-text-stroke: 1px blue;
   font-weight: bold;
-}
+} */
+
 /********* FOOTER  **********/
 .copyright {
   font-size: 10px;
@@ -143,7 +151,7 @@ p.name {
 }
 
 .picture {
-  background-image: url(1x/frontpage_image1.png);
+  background-image: url(1x/frontapage_2.png);
   height: 400px;
   width: 400px;
   background-size: cover;
@@ -186,14 +194,10 @@ p.name {
 }
 
 /********* WORK ***********/
-h1 {
-  text-align: center;
-  color: rgb(14, 14, 172);
-}
 
 .grid_layout {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   display: grid;
   /* column-gap: 1rem;
   row-gap: 1rem; */
@@ -203,7 +207,6 @@ h1 {
 }
 
 .work {
-  /* font-size: 16px; */
   justify-self: center;
   /* padding: 40px 60px 0px 60px; */
   /* padding: 40px 10px 0px 10px; */
