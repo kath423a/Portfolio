@@ -118,6 +118,37 @@ li a:hover {
   margin-left: 40px;
 }
 
+#frontpage_content h1 {
+  font-size: 5rem;
+}
+
+/* FULL TEXT ANIMATION */
+.fulltext-animation {
+  --letter: 0s;
+  animation-name: fulltext-animation_kf;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(0, 0.73, 0.91, 1.42);
+  animation-delay: calc(var(--letter) * 0.1s);
+  animation-fill-mode: both;
+  /* animation-delay: var(--delay); */
+}
+
+@keyframes fulltext-animation_kf {
+  0% {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+  /* 80% {
+        transform: translate(0, -5px);
+      } */
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 /********* WORK ***********/
 h1 {
   text-align: center;
