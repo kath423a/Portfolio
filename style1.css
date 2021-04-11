@@ -102,11 +102,10 @@ li a:hover {
   }
 }
 
-/* a#cooltext.home_link {
-  color: black;
-  -webkit-text-stroke: 1px blue;
-  font-weight: bold;
-} */
+a#cooltext.home_link {
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
+}
 
 /********* FOOTER  **********/
 .copyright {
@@ -375,7 +374,6 @@ li a:hover {
 .contact_info {
   margin-top: 90px;
   margin-left: 60px;
-  margin-right: 900px;
 }
 
 .contact_infoimg {
