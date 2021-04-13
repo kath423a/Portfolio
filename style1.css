@@ -120,24 +120,38 @@ a#cooltext.home_link {
 }
 
 /********* FRONTPAGE ***********/
-#frontpage_content {
-  display: flex;
-  flex-wrap: wrap;
+#frontpage_content1 {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.image1 {
+  background-image: url(1x/front_image1.png);
+  height: 550px;
+  width: 400px;
+  background-size: cover;
+  justify-self: center;
+  display: grid;
+}
+
+.image2 {
+  background-image: url(1x/front_image2.png);
+  height: 550px;
+  width: 400px;
+  background-size: cover;
+  justify-self: center;
+  display: grid;
+}
+
+#frontpage_content2 {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .name_intro {
-  margin-top: 90px;
-  margin-left: 60px;
-}
-
-.name_intro img {
-  max-width: 500px;
-}
-
-/* img.titel {
-  max-width: 300px;
   margin-top: 10px;
-} */
+  text-align: center;
+}
 
 .name_intro p {
   font-size: 30px;
@@ -145,6 +159,10 @@ a#cooltext.home_link {
 }
 
 .picture {
+  justify-self: center;
+}
+
+/* .picture {
   background-image: url(1x/frontapage_2.png);
   height: 400px;
   width: 400px;
@@ -153,6 +171,7 @@ a#cooltext.home_link {
   transition: all 5s ease-in-out 0s;
   margin-left: 200px;
 }
+*/
 
 .picture:hover {
   cursor: default;
