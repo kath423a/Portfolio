@@ -135,7 +135,7 @@ a#cooltext.home_link {
 }
 
 .image2 {
-  background-image: url(1x/front_image2.png);
+  background-image: url(1x/people1.png);
   height: 550px;
   width: 400px;
   background-size: cover;
@@ -146,6 +146,7 @@ a#cooltext.home_link {
 #frontpage_content2 {
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: -100px;
 }
 
 .name_intro {
@@ -153,13 +154,15 @@ a#cooltext.home_link {
   text-align: center;
 }
 
-.name_intro p {
-  font-size: 30px;
-  color: black;
+.name_intro img {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .picture {
   justify-self: center;
+  width: 400px;
+  transition: all 5s ease-in-out 0s;
 }
 
 /* .picture {
@@ -177,6 +180,21 @@ a#cooltext.home_link {
   cursor: default;
   transform: rotate(-360deg);
   transition: all 5s ease-in-out 0s;
+}
+
+#frontpage_content3 img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.center_text {
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* FULL TEXT ANIMATION */
@@ -357,19 +375,33 @@ a#cooltext.home_link {
   /* flex-direction: row; */
 }
 
-.about_info {
+#about_content {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* .about_info {
   margin-top: 20px;
   margin-left: 60px;
-}
+} */
 
-.about_info p {
+.about_info p,
+h3 {
   font-size: 19px;
-  color: black;
+  color: white;
   line-height: 30px;
-  max-width: 600px;
+  /* max-width: 600px; */
 }
 
-.illustration1 {
+.about_centertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .illustration1 {
   background-image: url(1x/about_image.png);
   height: 400px;
   width: 400px;
@@ -383,7 +415,7 @@ a#cooltext.home_link {
   cursor: default;
   transform: rotate(-360deg);
   transition: all 5s ease-in-out 0s;
-}
+} */
 
 /********* CONTACT ***********/
 #contact_content {
