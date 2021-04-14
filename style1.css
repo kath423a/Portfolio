@@ -161,6 +161,7 @@ a#cooltext.home_link {
 .name_intro img {
   margin-top: 40px;
   margin-bottom: 40px;
+  max-width: 600px;
 }
 
 .picture {
@@ -228,8 +229,35 @@ a#cooltext.home_link {
   }
 }
 
-/********* WORK ***********/
+@media (max-width: 800px) {
+  #frontpage_content1 {
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-gap: 10px;
+  }
 
+  #frontpage_content2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+
+  .picture {
+    margin-bottom: 40px;
+    justify-self: center;
+    width: 300px;
+    transition: all 5s ease-in-out 0s;
+  }
+
+  .name_intro img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/********* WORK ***********/
 .grid_layout {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
