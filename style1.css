@@ -124,15 +124,25 @@ a#cooltext.home_link {
 }
 
 /********* FOOTER **********/
-.copyright {
+.footer_content {
   font-size: 10px;
   margin-top: 77px;
   letter-spacing: 0.0875rem;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 200;
   color: black;
+}
+
+.social_media a {
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+}
+
+.copyright {
   text-align: right;
+  margin-right: 30px;
 }
 
 /********* FRONTPAGE ***********/
