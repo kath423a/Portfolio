@@ -1,5 +1,9 @@
 /******** GENERELLE INDSTILLINGER ***********/
 
+* {
+  margin: 0;
+}
+
 /********* FONTS ***********/
 
 h1 {
