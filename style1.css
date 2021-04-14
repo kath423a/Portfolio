@@ -13,6 +13,10 @@ h1 {
   font-weight: bold;
 }
 
+p {
+  font-family: "Assistant", sans-serif;
+}
+
 /************ HEADER OG NAV STYLES *********/
 
 nav {
@@ -111,7 +115,15 @@ a#cooltext.home_link {
   font-size: 3rem;
 }
 
-/********* FOOTER  **********/
+@media (max-width: 800px) {
+  a.home_link {
+    text-align: left;
+    margin-left: -990px;
+    font-size: 2rem;
+  }
+}
+
+/********* FOOTER **********/
 .copyright {
   font-size: 10px;
   margin-top: 77px;
@@ -187,19 +199,30 @@ a#cooltext.home_link {
   transition: all 5s ease-in-out 0s;
 }
 
-#frontpage_content3 img {
+#frontpage_content3 {
+  background-image: url(1x/background_cover.png);
   width: 100%;
-  height: auto;
+  height: 600px;
   position: relative;
 }
 
 .center_text {
-  font-size: 30px;
-  color: black;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.center_text p {
+  font-family: "Assistant", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.arrow {
+  color: white;
+  text-decoration: none;
+  margin-top: 400px;
 }
 
 /* FULL TEXT ANIMATION */
@@ -247,6 +270,13 @@ a#cooltext.home_link {
     justify-self: center;
     width: 300px;
     transition: all 5s ease-in-out 0s;
+  }
+
+  #frontpage_content3 {
+    background-image: url(1x/background_cover.png);
+    width: 100%;
+    height: 600px;
+    position: relative;
   }
 
   .name_intro img {
@@ -402,28 +432,33 @@ a#cooltext.home_link {
 
 /********* ABOUT ***********/
 #about_content {
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: row; */
+  background-image: url(1x/portrait_background.png);
+  width: 100%;
+  height: 696px;
+  position: relative;
 }
 
-#about_content {
+/* #about_content img {
   width: 100%;
   height: auto;
   position: relative;
-}
+} */
 
 /* .about_info {
   margin-top: 20px;
   margin-left: 60px;
 } */
 
-.about_info p,
-h3 {
-  font-size: 19px;
-  color: white;
-  line-height: 30px;
-  /* max-width: 600px; */
+.about_info p {
+  font-size: 25px;
+  color: black;
+  line-height: 50px;
+}
+
+.about_info h3 {
+  font-size: 20px;
+  color: black;
+  line-height: 50px;
 }
 
 .about_centertext {
@@ -431,6 +466,32 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1000px) {
+  .about_info p,
+  h3 {
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    /* max-width: 600px; */
+  }
+
+  .about_centertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 600px) {
+  #about_content {
+    background-image: url(1x/portrait_background_mobile.png);
+    width: 100%;
+    height: 696px;
+    position: relative;
+  }
 }
 
 /* .illustration1 {
