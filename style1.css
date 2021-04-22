@@ -19,6 +19,20 @@ p {
 
 /************ HEADER OG NAV STYLES *********/
 
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  text-align: left;
+}
+
+.nav {
+  text-align: right;
+}
+
 nav {
   margin: 0;
   overflow: hidden;
@@ -80,7 +94,6 @@ li a:hover {
 @media (min-width: 700px) {
   a.home_link {
     text-align: left;
-    margin-left: -990px;
     font-size: 2rem;
   }
 
@@ -105,20 +118,20 @@ li a:hover {
     width: 100%;
   }
 
-  header {
+  /* header {
     text-align: center;
-  }
+  } */
 }
 
 a#cooltext.home_link {
   font-family: "Staatliches", cursive;
   font-size: 3rem;
+  text-align: left;
 }
 
 @media (max-width: 800px) {
   a.home_link {
     text-align: left;
-    margin-left: -990px;
     font-size: 2rem;
   }
 }
@@ -131,6 +144,9 @@ a#cooltext.home_link {
   margin-bottom: 10px;
   font-weight: 200;
   color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social_media a {
@@ -239,11 +255,11 @@ a#cooltext.home_link {
 .fulltext-animation {
   --letter: 0s;
   animation-name: fulltext-animation_kf;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-timing-function: cubic-bezier(0, 0.73, 0.91, 1.42);
-  animation-delay: calc(var(--letter) * 0.1s);
+  animation-delay: calc(var(--letter) * 0.2s);
   animation-fill-mode: both;
   /* animation-delay: var(--delay); */
 }
