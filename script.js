@@ -40,16 +40,33 @@ function start() {
   document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 }
 
+// function toggleMenu() {
+//   console.log("toggleMenu");
+
+//   document.querySelector("#menubar").classList.toggle("hidden");
+
+//   let erskjult = document.querySelector("#menubar").classList.contains("hidden");
+
+//   if (erskjult == true) {
+//     document.querySelector("#menuknap").textContent = "☰";
+//   } else {
+//     document.querySelector("#menuknap").textContent = "x";
+//   }
+// }
+
+const navButton = document.querySelector("button");
+const navUl = document.querySelector("nav ul");
+
+navButton.addEventListener("click", toggleMenu);
+
 function toggleMenu() {
-  console.log("toggleMenu");
+  navUl.classList.toggle("shown");
 
-  document.querySelector("#menubar").classList.toggle("hidden");
+  let shown = navUl.classList.contains("shown");
 
-  let erskjult = document.querySelector("#menubar").classList.contains("hidden");
-
-  if (erskjult == true) {
-    document.querySelector("#menuknap").textContent = "☰";
+  if (shown == true) {
+    navButton.textContent = "×";
   } else {
-    document.querySelector("#menuknap").textContent = "x";
+    navButton.textContent = "☰";
   }
 }
