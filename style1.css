@@ -80,7 +80,7 @@ li a {
   justify-content: end;
 }
 
-span.fulltext-animation a:hover {
+a#cooltext.home_link a:hover {
   color: darkblue;
 }
 
