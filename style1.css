@@ -212,7 +212,34 @@ li a:hover {
 #frontpage_content2 {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: -100px;
+  /* margin-top: -100px; */
+}
+
+.scroll_down {
+  width: 1px;
+  height: 70px;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #00008b 50%, rgba(255, 255, 255, 0) 50%);
+  background-position: 0 -60px;
+  background-size: 100% 200%;
+  animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+
+@keyframes scrolldown {
+  0% {
+    background-position: 0 -70px;
+  }
+  75% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 70px;
+  }
 }
 
 .name_intro {
@@ -254,6 +281,7 @@ li a:hover {
   width: 100%;
   height: 600px;
   position: relative;
+  margin-top: 100px;
 }
 
 .center_text {
