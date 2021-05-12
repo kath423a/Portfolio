@@ -581,31 +581,38 @@ li a:hover {
 
 /********* CONTACT ***********/
 #contact_content {
-  /* background-image: url(1x/contact_background.png); */
-  width: 100%;
-  height: 440px;
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_image {
+  background-image: url(1x/building.png);
+  height: 550px;
+  width: 450px;
+  margin-left: -350px;
 }
 
 .contact_info {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid black;
-  padding: 20px;
+  top: 35%;
+  left: 55%;
+  /* transform: translate(-50%, -50%); */
+  padding: 30px;
 }
 
 .contact_info h3 {
   font-family: "Assistant", sans-serif;
   font-size: 1.7rem;
   color: black;
+  padding: 10px;
 }
 
 .contact_info p {
   font-family: "Assistant", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
+  text-align: center;
 }
 
 /* INDEX FRONTPAGE LOAD */
