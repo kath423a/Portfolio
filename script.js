@@ -4,9 +4,11 @@ window.addEventListener("DOMContentLoaded", start);
 
 // Global variables
 let splittext;
+var myVar;
 
 function start() {
   console.log("Lets gooooo");
+  // document.querySelector("#loading").classList.add(".hide");
 
   //Create a global variable and select the text from the html
   let sentence = document.querySelector("#cooltext");
@@ -38,21 +40,13 @@ function start() {
 
   //Click burgermenu
   document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+  myVar = setTimeout(timerSet, 2000);
 }
 
-// function toggleMenu() {
-//   console.log("toggleMenu");
-
-//   document.querySelector("#menubar").classList.toggle("hidden");
-
-//   let erskjult = document.querySelector("#menubar").classList.contains("hidden");
-
-//   if (erskjult == true) {
-//     document.querySelector("#menuknap").textContent = "☰";
-//   } else {
-//     document.querySelector("#menuknap").textContent = "x";
-//   }
-// }
+function timerSet() {
+  document.getElementById("loading").style.display = "none";
+}
 
 const navButton = document.querySelector("button");
 const navUl = document.querySelector("nav ul");

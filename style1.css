@@ -86,7 +86,7 @@ a#cooltext.home_link a:hover {
 
 li a:hover {
   color: #00008b;
-  font-weight: 400;
+  text-decoration: line-through;
 }
 
 .shown {
@@ -194,7 +194,7 @@ li a:hover {
 .image1 {
   background-image: url(1x/front_image1.png);
   height: 550px;
-  width: 400px;
+  width: 450px;
   background-size: cover;
   justify-self: center;
   display: grid;
@@ -203,7 +203,7 @@ li a:hover {
 .image2 {
   background-image: url(1x/people1.png);
   height: 550px;
-  width: 400px;
+  width: 450px;
   background-size: cover;
   justify-self: center;
   display: grid;
@@ -217,7 +217,7 @@ li a:hover {
 
 .scroll_down {
   width: 1px;
-  height: 70px;
+  height: 100px;
   position: absolute;
   bottom: -50px;
   left: 0;
@@ -232,14 +232,21 @@ li a:hover {
 
 @keyframes scrolldown {
   0% {
-    background-position: 0 -70px;
+    background-position: 0 -100px;
   }
   75% {
     background-position: 0 0;
   }
   100% {
-    background-position: 0 70px;
+    background-position: 0 100px;
   }
+}
+
+.arrow_down {
+  font-size: 1.5em;
+  color: #00008b;
+  text-align: center;
+  margin-top: 90px;
 }
 
 .name_intro {
@@ -248,32 +255,9 @@ li a:hover {
 }
 
 .name_intro img {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 40px;
   max-width: 600px;
-}
-
-.picture {
-  justify-self: center;
-  width: 400px;
-  transition: all 5s ease-in-out 0s;
-}
-
-/* .picture {
-  background-image: url(1x/frontapage_2.png);
-  height: 400px;
-  width: 400px;
-  background-size: cover;
-  margin-top: 90px;
-  transition: all 5s ease-in-out 0s;
-  margin-left: 200px;
-}
-*/
-
-.picture:hover {
-  cursor: default;
-  transform: rotate(-360deg);
-  transition: all 5s ease-in-out 0s;
 }
 
 #frontpage_content3 {
@@ -298,9 +282,33 @@ li a:hover {
 }
 
 .arrow {
-  color: white;
+  color: black;
   text-decoration: none;
   margin-top: 400px;
+}
+
+#frontpage_content4 {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  margin-top: 100px;
+}
+
+.image3 {
+  background-image: url(1x/man.jpg);
+  height: 550px;
+  width: 450px;
+  background-size: cover;
+  justify-self: center;
+  display: grid;
+}
+
+.image4 {
+  background-image: url(1x/kids.jpg);
+  height: 550px;
+  width: 450px;
+  background-size: cover;
+  justify-self: center;
+  display: grid;
 }
 
 /* FULL TEXT ANIMATION */
@@ -573,9 +581,9 @@ li a:hover {
 
 /********* CONTACT ***********/
 #contact_content {
-  background-image: url(1x/contact_background.png);
+  /* background-image: url(1x/contact_background.png); */
   width: 100%;
-  height: 696px;
+  height: 440px;
   position: relative;
 }
 
@@ -584,11 +592,59 @@ li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 1px solid black;
+  padding: 20px;
 }
 
-.contact_info h3,
-p {
+.contact_info h3 {
   font-family: "Assistant", sans-serif;
-  font-size: 30px;
-  color: white;
+  font-size: 1.7rem;
+  color: black;
+}
+
+.contact_info p {
+  font-family: "Assistant", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+/* INDEX FRONTPAGE LOAD */
+
+#loading-image {
+  animation: rotation 7s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* LOADING */
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  /* opacity: 0.1; */
+  background-color: #fff;
+  z-index: 99;
+  text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 100;
+}
+
+.hide {
+  display: none;
 }
