@@ -12,10 +12,56 @@
     <link rel="icon" type="image/png" href="1x/favicon_logo.png" />
   </head>
   <body>
+    <div id="loading">
+      <style>
+        /* INDEX FRONTPAGE LOAD */
+
+        #loading-image {
+          animation: rotation 7s infinite linear;
+        }
+
+        @keyframes rotation {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+          }
+        }
+
+        /* LOADING */
+
+        #loading {
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: fixed;
+          display: block;
+          background-color: #fff;
+          z-index: 99;
+          text-align: center;
+        }
+
+        #loading-image {
+          position: absolute;
+          top: 40%;
+          left: 40%;
+          z-index: 100;
+        }
+
+        .hide {
+          display: none;
+        }
+      </style>
+      <img id="loading-image" src="1x/favicon_logo.png" alt="Loading..." />
+    </div>
     <header>
       <button id="menuknap">☰</button>
       <div class="logo" class="hidden">
-        <li><a class="home_link" href="home.html" class="button" id="cooltext" class="fulltext-animation">HUESAAB</a></li>
+        <li>
+          <a class="home_link" href="index.html" class="button" id="cooltext" class="fulltext-animation">HUESAAB</a>
+        </li>
       </div>
       <nav>
         <ul>
